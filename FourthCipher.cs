@@ -70,7 +70,13 @@ namespace Cryptography_1
 			//Например 64287
 			// -->  32154
 
-			int[] NewNumberKey = NumberKey;
+			//int[] NewNumberKey = NumberKey;
+			
+			int[] NewNumberKey;
+			foreach (var key in NumberKey)
+			{
+				NewNumberKey.Add(key);
+			}
 			//Array.Sort(NumberKey);
 			
 			//for (int i = 0; i < NumberKey.Length; i++)
